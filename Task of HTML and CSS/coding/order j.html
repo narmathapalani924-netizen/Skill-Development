@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elite Gold Gallery - Order Page</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background: linear-gradient(135deg,#000000,#6b5200,#FFD700);
+color:white;
+text-align:center;
+}
+
+/* Header */
+
+header{
+padding:30px;
+}
+
+header h1{
+color:#FFD700;
+font-size:40px;
+}
+
+/* Order Form */
+
+.order-box{
+background:white;
+color:black;
+width:350px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 10px 20px rgba(0,0,0,0.5);
+}
+
+input, select{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid gray;
+}
+
+/* Button */
+
+button{
+background:#FFD700;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#c9a227;
+}
+
+/* Success Message */
+
+#success{
+display:none;
+margin-top:40px;
+font-size:25px;
+color:#00ffcc;
+}
+
+/* CSS trick without JavaScript */
+
+:target{
+display:block !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Elite Gold Gallery</h1>
+<p>Order Your Jewellery</p>
+</header>
+
+<div class="order-box">
+
+<form action="#success">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="text" placeholder="Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Earrings</option>
+<option>Necklace</option>
+<option>Rings</option>
+<option>Bangles</option>
+<option>Bracelets</option>
+</select>
+
+<br><br>
+
+<button type="submit">Place Order</button>
+
+</form>
+
+</div>
+
+<div id="success">
+✅ Your Order Has Been Placed Successfully!
+</div>
+
+</body>
+</html>
